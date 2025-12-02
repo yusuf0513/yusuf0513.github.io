@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Data Entry Portfolio - Muh Yusuf
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Poppins', sans-serif;
+      perspective: 1500px;
+      background: #0f172a;
+      color: #e0e7ff;
+    }
+    .card-3d {
+      transform-style: preserve-3d;
+      transition: transform 0.6s ease;
+    }
+    .card-3d:hover {
+      transform: rotateY(15deg) rotateX(10deg) scale(1.05);
+      box-shadow: 0 20px 40px rgba(99, 102, 241, 0.6);
+    }
+    .card-3d:active {
+      transform: rotateY(0deg) rotateX(0deg) scale(0.95);
+      box-shadow: 0 10px 20px rgba(99, 102, 241, 0.4);
+    }
+  </style>
+ </head>
+ <body class="min-h-screen flex flex-col">
+  <!-- Navbar -->
+  <nav class="bg-indigo-900 shadow-lg sticky top-0 z-50">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a class="text-3xl font-bold text-indigo-400 tracking-wide select-none" href="#">
+     Portfolio
+    </a>
+    <ul class="hidden md:flex space-x-8 text-indigo-200 font-medium">
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#about">
+       About Me
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#projects">
+       Projects
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#skills">
+       Skills
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#contact">
+       Contact
+      </a>
+     </li>
+    </ul>
+    <button class="md:hidden text-indigo-300 focus:outline-none" id="menu-btn">
+     <i class="fas fa-bars fa-2x">
+     </i>
+    </button>
+   </div>
+   <div class="hidden md:hidden bg-indigo-800" id="mobile-menu">
+    <ul class="flex flex-col space-y-3 px-6 py-4 text-indigo-200 font-medium">
+     <li>
+      <a class="block hover:text-indigo-400 transition" href="#about">
+       About Me
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-400 transition" href="#projects">
+       Projects
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-400 transition" href="#skills">
+       Skills
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-400 transition" href="#contact">
+       Contact
+      </a>
+     </li>
+    </ul>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <header class="flex-grow flex flex-col justify-center items-center text-center px-6 py-20 bg-gradient-to-br from-indigo-900 via-indigo-800 to-indigo-700">
+   <h1 class="text-5xl md:text-6xl font-extrabold text-indigo-300 mb-4 tracking-wide select-none">
+    Hi, I'm Muh Yusuf
+   </h1>
+   <p class="text-indigo-200 max-w-3xl text-lg md:text-xl mb-8">
+    A detail-oriented and efficient Data Entry Specialist with over 3 years of experience in accurately managing and processing large volumes of data. I am dedicated to ensuring data integrity and providing high-quality support to help businesses achieve their goals.
+   </p>
+   <a class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg transition transform hover:scale-105" href="#projects">
+    View My Work
+   </a>
+  </header>
+  <!-- About Me Section -->
+  <section class="max-w-7xl mx-auto px-6 py-20" id="about">
+   <h2 class="text-4xl font-bold text-indigo-300 mb-12 text-center select-none">
+    About Me
+   </h2>
+   <div class="flex flex-col md:flex-row items-center md:items-start gap-12">
+    <!-- GANTI GAMBAR DENGAN FOTO PROFESIONAL ANDA -->
+    <div class="flex-shrink-0 w-64 h-64 rounded-3xl overflow-hidden shadow-2xl transform transition-transform duration-500 hover:scale-105 card-3d">
+     <img alt="Muh Yusuf's professional headshot" class="w-full h-full object-cover" height="400" loading="lazy" src="portfolio2.jpg" width="400"/>
+    </div>
+    <div class="text-indigo-200 max-w-xl space-y-6 text-lg leading-relaxed">
+     <p>
+      I am a highly organized and reliable professional specializing in data entry, data processing, and administrative support. With a proven track record of maintaining 99%+ accuracy in data entry tasks, I excel at transforming raw data into organized, structured, and usable formats.
+     </p>
+     <p>
+      My expertise lies in using advanced functions of spreadsheet software like Microsoft Excel and Google Sheets to clean, analyze, and visualize data. I am a fast typist, committed to meeting deadlines, and I pride myself on my keen attention to detail, which ensures the highest quality of work for every project.
+     </p>
+     <a class="inline-block mt-4 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transition transform hover:scale-105" href="#contact">
+      Get in Touch
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- Projects Section -->
+  <section class="bg-indigo-900 py-20 px-6" id="projects">
+   <h2 class="text-4xl font-bold text-indigo-300 mb-12 text-center select-none">
+    My Projects
+   </h2>
+   <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+    <!-- PROJECT 1 -->
+    <article class="bg-indigo-800 rounded-3xl shadow-lg overflow-hidden card-3d cursor-pointer hover:shadow-indigo-500/70 transition-shadow duration-300">
+     <!-- GANTI GAMBAR DENGAN SCREENSHOT PROYEK ANDA -->
+     <img alt="Screenshot of a formatted Excel inventory sheet" class="w-full h-48 object-cover" height="400" loading="lazy" src="data_cleaning.png" width="600"/>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold text-indigo-200 mb-2">
+       Data Entry & Formatting
+      </h3>
+      <p class="text-indigo-300 text-sm leading-relaxed">
+       Accurately entered over 1,000 product records into an Excel spreadsheet, applying professional formatting, formulas, and conditional formatting to improve readability and analysis.
+      </p>
+      <!-- GANTI LINK DENGAN FILE PDF ANDA -->
+      <a class="inline-block mt-4 text-indigo-400 hover:text-indigo-200 font-semibold" href="data_cleaning.pdf" rel="noopener" target="_blank">
+       View Sample PDF
+       <i class="fas fa-external-link-alt ml-1">
+       </i>
+      </a>
+     </div>
+    </article>
+    <!-- PROJECT 2 -->
+    <article class="bg-indigo-800 rounded-3xl shadow-lg overflow-hidden card-3d cursor-pointer hover:shadow-indigo-500/70 transition-shadow duration-300">
+     <!-- GANTI GAMBAR DENGAN SCREENSHOT PROYEK ANDA -->
+     <img alt="Screenshot of data before and after cleaning" class="w-full h-48 object-cover" height="400" loading="lazy" src="cleaning data.png" width="600"/>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold text-indigo-200 mb-2">
+       Data Cleaning & Processing
+      </h3>
+      <p class="text-indigo-300 text-sm leading-relaxed">
+       Standardized and cleaned a messy customer contact list of over 5,000 entries, ensuring consistency in names, emails, and phone numbers for better CRM management.
+      </p>
+      <!-- GANTI LINK DENGAN FILE PDF ANDA -->
+      <a class="inline-block mt-4 text-indigo-400 hover:text-indigo-200 font-semibold" href="cleaning data.pdf" rel="noopener" target="_blank">
+       View Sample PDF
+       <i class="fas fa-external-link-alt ml-1">
+       </i>
+      </a>
+     </div>
+    </article>
+    <!-- PROJECT 3 -->
+    <article class="bg-indigo-800 rounded-3xl shadow-lg overflow-hidden card-3d cursor-pointer hover:shadow-indigo-500/70 transition-shadow duration-300">
+     <!-- GANTI GAMBAR DENGAN SCREENSHOT PROYEK ANDA -->
+     <img alt="Screenshot of a transcribed document" class="w-full h-48 object-cover" height="400" loading="lazy" src="data transcription.png" width="600"/>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold text-indigo-200 mb-2">
+       Data Transcription
+      </h3>
+      <p class="text-indigo-300 text-sm leading-relaxed">
+       Transcribed scanned documents and handwritten notes into digital Word and Excel formats with high accuracy and speed, maintaining original formatting and structure.
+      </p>
+      <!-- GANTI LINK DENGAN FILE PDF ANDA -->
+      <a class="inline-block mt-4 text-indigo-400 hover:text-indigo-200 font-semibold" href="data transcription.pdf" rel="noopener" target="_blank">
+       View Sample PDF
+       <i class="fas fa-external-link-alt ml-1">
+       </i>
+      </a>
+     </div>
+    </article>
+   </div>
+  </section>
+  <!-- Skills Section -->
+  <section class="max-w-7xl mx-auto px-6 py-20" id="skills">
+   <h2 class="text-4xl font-bold text-indigo-300 mb-12 text-center select-none">
+    Skills &amp; Tools
+   </h2>
+   <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-10 max-w-5xl mx-auto text-center">
+    <!-- GANTI GAMBAR DENGAN ICON SKILL ANDA -->
+    <div class="card-3d p-6 bg-indigo-800 rounded-3xl shadow-lg hover:shadow-indigo-500/70 transition-shadow duration-300 cursor-default">
+     <img alt="Microsoft Excel logo" class="mx-auto mb-4" height="80" loading="lazy" src="excel_logo.png" width="80"/>
+     <p class="text-indigo-200 font-semibold">
+      MS Excel
+     </p>
+    </div>
+    <div class="card-3d p-6 bg-indigo-800 rounded-3xl shadow-lg hover:shadow-indigo-500/70 transition-shadow duration-300 cursor-default">
+     <img alt="Google Sheets logo" class="mx-auto mb-4" height="80" loading="lazy" src="google sheets.jpg" width="80"/>
+     <p class="text-indigo-200 font-semibold">
+      Google Sheets
+     </p>
+    </div>
+    <div class="card-3d p-6 bg-indigo-800 rounded-3xl shadow-lg hover:shadow-indigo-500/70 transition-shadow duration-300 cursor-default">
+     <img alt="Microsoft Word logo" class="mx-auto mb-4" height="80" loading="lazy" src="word_logo.jpg" width="80"/>
+     <p class="text-indigo-200 font-semibold">
+      MS Word
+     </p>
+    </div>
+    <div class="card-3d p-6 bg-indigo-800 rounded-3xl shadow-lg hover:shadow-indigo-500/70 transition-shadow duration-300 cursor-default">
+     <img alt="Typing speed icon" class="mx-auto mb-4" height="80" loading="lazy" src="ts_logo.png" width="80"/>
+     <p class="text-indigo-200 font-semibold">
+      60+ WPM Typing
+     </p>
+    </div>
+    <div class="card-3d p-6 bg-indigo-800 rounded-3xl shadow-lg hover:shadow-indigo-500/70 transition-shadow duration-300 cursor-default">
+     <img alt="Data processing icon" class="mx-auto mb-4" height="80" loading="lazy" src="data processing.png" width="80"/>
+     <p class="text-indigo-200 font-semibold">
+      Data Processing
+     </p>
+    </div>
+    <div class="card-3d p-6 bg-indigo-800 rounded-3xl shadow-lg hover:shadow-indigo-500/70 transition-shadow duration-300 cursor-default">
+     <img alt="Attention to detail icon" class="mx-auto mb-4" height="80" loading="lazy" src="attention.jpg" width="80"/>
+     <p class="text-indigo-200 font-semibold">
+      Attention to Detail
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="bg-indigo-900 py-20 px-6" id="contact">
+   <h2 class="text-4xl font-bold text-indigo-300 mb-12 text-center select-none">
+    Contact Me
+   </h2>
+   <div class="max-w-3xl mx-auto bg-indigo-800 rounded-3xl shadow-lg p-10 card-3d">
+    <!-- GANTI {form_id} DENGAN ID FORM ANDA DARI FORMSPREE.IO -->
+    <form action="https://formspree.io/f/mjkdvonr" class="space-y-6" method="POST">
+     <div>
+      <label class="block text-indigo-200 font-semibold mb-2" for="name">
+       Name
+      </label>
+      <input class="w-full rounded-lg px-4 py-3 bg-indigo-700 text-indigo-100 placeholder-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-400" id="name" name="name" placeholder="Your full name" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block text-indigo-200 font-semibold mb-2" for="email">
+       Email
+      </label>
+      <input class="w-full rounded-lg px-4 py-3 bg-indigo-700 text-indigo-100 placeholder-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-400" id="email" name="email" placeholder="your.email@example.com" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block text-indigo-200 font-semibold mb-2" for="message">
+       Message
+      </label>
+      <textarea class="w-full rounded-lg px-4 py-3 bg-indigo-700 text-indigo-100 placeholder-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-400" id="message" name="message" placeholder="Write your message here..." required="" rows="5"></textarea>
+     </div>
+     <button class="w-full bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 rounded-lg shadow-lg transition transform hover:scale-105" type="submit">
+      Send Message
+     </button>
+    </form>
+    <div class="mt-10 text-indigo-300 text-center space-y-4">
+     <!-- GANTI DENGAN NOMOR TELEPON ANDA -->
+     <p>
+      <i class="fas fa-phone-alt mr-2">
+      </i>
+      +(62)8211-1406-422
+     </p>
+     <!-- GANTI DENGAN EMAIL ANDA -->
+     <p>
+      <i class="fas fa-envelope mr-2">
+      </i>
+      yusufmuh27@gmail.com
+     </p>
+     <p>
+      <!-- GANTI DENGAN LINK PROFIL LINKEDIN DAN GITHUB ANDA -->
+      <a class="hover:text-indigo-400 transition" href="https://linkedin.com/in/muh-yusuf27" rel="noopener" target="_blank">
+       <i class="fab fa-linkedin fa-lg mr-2">
+       </i>
+       LinkedIn
+      </a>
+      |
+      <a class="hover:text-indigo-400 transition ml-2" href="https://github.com/yusuf0513" rel="noopener" target="_blank">
+       <i class="fab fa-github fa-lg mr-2">
+       </i>
+       GitHub
+      </a>
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-indigo-900 py-6 text-center text-indigo-400 select-none">
+   © 2024 Muh Yusuf. All rights reserved.
+  </footer>
+  <script>
+   const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
